@@ -1,0 +1,12 @@
+﻿@using Domain.ShopCMS.Entities
+@model IEnumerable<Domain.ShopCMS.Entities.Product>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>title</h2>
+@foreach (Product product in Model)
+{
+   <h2>@product.Description</h2> 
+}
